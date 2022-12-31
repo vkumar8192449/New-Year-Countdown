@@ -40,5 +40,16 @@ function count() {
     }
     document.getElementById('secs').style.color = '#eb477b';
 
+    if (day_print == 365 && hour_print == 0 && mint_print == 0 && sec_print == 0) {
+        document.getElementById('days').innerText = '00';
+        clearTimeout(setIn);
+        itsnewyear();
+    }
+
 }
 const setIn = setInterval(count, 1000);
+
+function itsnewyear() {
+
+    document.querySelector('#container p').innerText = `It's New Year🥂`;
+}
