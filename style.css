@@ -1,0 +1,82 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+body::before {
+    content: "";
+    background: url(back_1.jpg);
+    background-size: 100% 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    filter: blur(2px);
+    z-index: -1;
+}
+
+body img:first-child {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+body img:nth-child(2) {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+body img {
+    visibility: hidden;
+}
+
+#container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#container p {
+    color: white;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 60px;
+}
+
+#data {
+    width: 750px;
+    height: 180px;
+    background-color: rgba(106, 106, 106, 0.3);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top-left-radius: 45px;
+    border-bottom-right-radius: 45px;
+    box-shadow: 1px 1px 5px 2px white;
+}
+
+#data div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#data p {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+#data div p:first-child {
+    font-size: 80px;
+}
