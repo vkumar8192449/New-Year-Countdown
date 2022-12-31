@@ -80,3 +80,25 @@ body img {
 #data div p:first-child {
     font-size: 80px;
 }
+
+@keyframes temp {
+    0% {
+        transform: scale(1);
+    }
+
+    25% {
+        transform: scale(1.25);
+    }
+
+    50% {
+        transform: scale(1);
+    }
+
+    75% {
+        transform: scale(1.25);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}

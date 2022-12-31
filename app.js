@@ -51,5 +51,24 @@ const setIn = setInterval(count, 1000);
 
 function itsnewyear() {
 
+    document.getElementById('days').style.animationName = 'temp';
+    document.getElementById('days').style.animationDuration = '1s';
+    document.getElementById('days').style.animationIterationCount = 'infinite';
+
+    document.getElementById('hours').style.animationName = 'temp';
+    document.getElementById('hours').style.animationDuration = '1s';
+    document.getElementById('hours').style.animationIterationCount = 'infinite';
+
+    document.getElementById('mints').style.animationName = 'temp';
+    document.getElementById('mints').style.animationDuration = '1s';
+    document.getElementById('mints').style.animationIterationCount = 'infinite';
+
+    document.getElementById('secs').style.animationName = 'temp';
+    document.getElementById('secs').style.animationDuration = '1s';
+    document.getElementById('secs').style.animationIterationCount = 'infinite';
+
+    document.getElementById('fire1').style.visibility = 'visible';
+    document.getElementById('fire2').style.visibility = 'visible';
+
     document.querySelector('#container p').innerText = `It's New Year🥂`;
 }
